@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2a1f3d">
+  <meta name="description" content="An interactive research paper on descriptive learner and enrollment analytics in the EduPro Online Platform.">
+  <title>EduPro Research | Learner & Enrollment Intelligence</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#paper">Skip to paper</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="EduPro Research home">
+      <span class="brand-mark" aria-hidden="true">E</span>
+      <span>EduPro <em>Research</em></span>
+    </a>
+    <div class="topbar-meta"><span class="status-dot"></span> Research note <span class="meta-divider">/</span> 2025 snapshot</div>
+    <div class="topbar-actions">
+      <button class="button button-quiet" id="copy-citation" type="button" title="Copy a short citation">Copy citation</button>
+      <button class="button button-primary" id="print-paper" type="button">Print paper <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <div class="page-shell" id="top">
+    <aside class="rail" aria-label="Paper navigation">
+      <div class="rail-label">IN THIS PAPER</div>
+      <nav class="toc">
+        <a class="toc-link active" href="#abstract"><span>01</span> Abstract</a>
+        <a class="toc-link" href="#evidence"><span>02</span> Evidence dashboard</a>
+        <a class="toc-link" href="#method"><span>03</span> Study design</a>
+        <a class="toc-link" href="#findings"><span>04</span> Findings</a>
+        <a class="toc-link" href="#implications"><span>05</span> Implications</a>
+        <a class="toc-link" href="#limits"><span>06</span> Limitations</a>
+        <a class="toc-link" href="#references"><span>07</span> References</a>
+      </nav>
+      <div class="rail-note">
+        <span class="rail-note-icon" aria-hidden="true">↗</span>
+        <p>Explore the figures.<br><strong>Every chart is interactive.</strong></p>
+      </div>
+      <div class="rail-footer">EDUPRO ANALYTICS<br>DESCRIPTIVE SERIES · 01</div>
+    </aside>
+
+    <main id="paper">
+      <section class="hero" aria-labelledby="paper-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> RESEARCH BRIEF <span class="eyebrow-dot">•</span> OCTOBER 2026</div>
+          <h1 id="paper-title">From catalog to<br><span>learner activity.</span></h1>
+          <p class="hero-deck">A descriptive study of enrollment patterns, course supply, and participation representation in the EduPro Online Platform.</p>
+          <div class="hero-tags">
+            <span>LEARNER ANALYTICS</span><span>OBSERVATIONAL</span><span>2025 SNAPSHOT</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-orbit orbit-three"></div>
+          <div class="hero-core"><span>10k</span><small>ENROLLMENTS</small></div>
+          <span class="orbit-point point-one"></span><span class="orbit-point point-two"></span>
+          <span class="orbit-point point-three"></span><span class="orbit-point point-four"></span>
+          <span class="hero-art-caption">A year of learning activity<br>mapped across the catalog</span>
+        </div>
+        <div class="hero-foot">
+          <span>EDUPRO ONLINE PLATFORM</span><span>01 — 07</span>
+        </div>
+      </section>
+
+      <section class="abstract paper-section" id="abstract">
+        <div class="section-kicker"><span>01</span> ABSTRACT</div>
+        <div class="abstract-grid">
+          <div>
+            <h2>What does the enrollment record reveal?</h2>
+            <p class="lead">This paper presents a reproducible, descriptive analysis of a year of EduPro enrollment transactions. It examines how activity is distributed across learner age cohorts, course categories, instructional levels, and gender groups—and how those patterns compare with catalog supply.</p>
+          </div>
+          <div class="abstract-side">
+            <p>The study combines validated workbook ingestion with three transparent analytical views: the Category Popularity Index (CPI), adjusted gender participation ratios, and aggregate review flags. Direct identifiers are removed before analysis, and small demographic cells are suppressed.</p>
+            <div class="keywords"><span>KEYWORDS</span> online learning · descriptive analytics · equity · catalog planning</div>
+          </div>
+        </div>
+        <div class="question-strip">
+          <div><span class="question-number">Q1</span><p>How is enrollment activity distributed across the available catalog?</p></div>
+          <div><span class="question-number">Q2</span><p>Which learner groups are represented in this transaction snapshot?</p></div>
+          <div><span class="question-number">Q3</span><p>What can a privacy-aware descriptive dashboard support—and what can it not establish?</p></div>
+        </div>
+      </section>
+
+      <section class="paper-section evidence-section" id="evidence">
+        <div class="section-heading">
+          <div><div class="section-kicker"><span>02</span> EVIDENCE DASHBOARD</div><h2>A year, in context.</h2></div>
+          <p class="section-aside">Validated records · Jan 01 — Dec 30, 2025</p>
+        </div>
+        <div class="metrics-grid">
+          <article class="metric-card metric-featured"><span class="metric-label">VALID ENROLLMENTS</span><strong>10,000</strong><span class="metric-foot"><i class="metric-icon icon-violet">↗</i> transaction records retained</span></article>
+          <article class="metric-card"><span class="metric-label">ACTIVE LEARNERS</span><strong>3,000</strong><span class="metric-foot">3.33 enrollments per learner</span></article>
+          <article class="metric-card"><span class="metric-label">COURSE CATALOG</span><strong>60</strong><span class="metric-foot">12 categories · 5 each</span></article>
+          <article class="metric-card"><span class="metric-label">TRANSACTION VALUE</span><strong>$911k</strong><span class="metric-foot">reported amount total · $911,323.47</span></article>
+        </div>
+
+        <div class="chart-grid chart-grid-wide">
+          <article class="chart-card trend-card">
+            <div class="chart-head">
+              <div><div class="chart-eyebrow">ACTIVITY OVER TIME</div><h3>Enrollment rhythm</h3></div>
+              <div class="chart-controls" role="group" aria-label="Trend display">
+                <button class="segmented-button active" type="button" data-trend-mode="count">Count</button>
+                <button class="segmented-button" type="button" data-trend-mode="index">Index</button>
+              </div>
+            </div>
+            <p class="chart-subtitle">Monthly valid enrollments. Select a point to inspect the month.</p>
+            <div class="chart-legend"><span><i class="legend-dot violet"></i> Enrollment records</span><span class="chart-insight">Peak: <b>June · 899</b></span></div>
+            <div class="svg-chart" id="trend-chart" aria-label="Monthly enrollment trend chart"></div>
+            <div class="chart-detail" id="trend-detail" aria-live="polite">Select a point to see its monthly record count and share of the year.</div>
+          </article>
+          <article class="chart-card mix-card">
+            <div class="chart-head"><div><div class="chart-eyebrow">ACCESS & PRICING</div><h3>Free and paid</h3></div><span class="mini-badge">ENROLLMENT SHARE</span></div>
+            <p class="chart-subtitle">Each record is counted as an enrollment, regardless of amount.</p>
+            <div class="mix-total"><strong>10,000</strong><span>total records</span></div>
+            <div class="mix-bar" role="img" aria-label="64.03 percent free enrollments, 35.97 percent paid enrollments"><span class="mix-free" style="width:64.03%"></span><span class="mix-paid" style="width:35.97%"></span></div>
+            <div class="mix-legend">
+              <div><i class="legend-dot violet"></i><span>Free</span><strong>6,403</strong><small>64.03%</small></div>
+              <div><i class="legend-dot blue"></i><span>Paid</span><strong>3,597</strong><small>35.97%</small></div>
+            </div>
+            <div class="insight-note"><span aria-hidden="true">✳</span><p>Zero-dollar enrollments are included in participation volume; amount is reported separately and is not treated as a learning outcome.</p></div>
+          </article>
+        </div>
+
+        <div class="chart-grid">
+          <article class="chart-card category-card">
+            <div class="chart-head">
+              <div><div class="chart-eyebrow">CATALOG SUPPLY VS DEMAND</div><h3>Popularity, relative to supply</h3></div>
+              <label class="select-label" for="category-sort">SORT BY
+                <select id="category-sort" aria-label="Sort course categories by"><option value="enrollments">Enrollments</option><option value="cpi">Popularity index</option></select>
+              </label>
+            </div>
+            <p class="chart-subtitle">CPI = category enrollment share ÷ category catalog share. A value of 1.00 indicates proportional uptake.</p>
+            <div id="category-chart" class="category-chart" aria-label="Interactive category popularity index chart"></div>
+            <div class="chart-detail" id="category-detail" aria-live="polite">Select a category to inspect enrollment volume and CPI.</div>
+          </article>
+          <article class="chart-card cohort-card">
+            <div class="chart-head"><div><div class="chart-eyebrow">LEARNER AGE COHORT</div><h3>Who enrolled?</h3></div>
+              <div class="chart-controls" role="group" aria-label="Cohort chart display">
+                <button class="segmented-button active" type="button" data-cohort-mode="share">Share</button>
+                <button class="segmented-button" type="button" data-cohort-mode="count">Count</button>
+              </div>
+            </div>
+            <p class="chart-subtitle">Cohorts are mutually exclusive; age is observed for all active learners.</p>
+            <div id="cohort-chart" class="cohort-chart" aria-label="Interactive age cohort distribution"></div>
+            <div class="cohort-note"><span class="note-mark">!</span><span>No enrollments in the 36–44 or 45+ cohorts appear in this snapshot.</span></div>
+          </article>
+        </div>
+
+        <article class="chart-card parity-card">
+          <div class="chart-head">
+            <div><div class="chart-eyebrow">REPRESENTATION · CATEGORY LEVEL</div><h3>Adjusted gender participation</h3></div>
+            <span class="mini-badge">REFERENCE BAND 0.97–1.03</span>
+          </div>
+          <p class="chart-subtitle">Adjusted GPI compares each category’s share of female enrollments with its share of male enrollments. Values above 1 indicate a higher relative female share; below 1, a higher relative male share.</p>
+          <div id="parity-chart" class="parity-chart" aria-label="Gender participation index by category"></div>
+          <div class="parity-legend"><span><i class="legend-dot rose"></i> Higher relative female share</span><span><i class="legend-dot blue"></i> Higher relative male share</span><span><i class="parity-band-key"></i> Reference band</span></div>
+          <div class="chart-detail" id="parity-detail" aria-live="polite">Select a point to view category participation counts and the adjusted index.</div>
+        </article>
+        <p class="figure-caption"><b>Figure 1.</b> Snapshot indicators from the validated workbook. Interactive controls change presentation only; source observations are not altered. CPI and parity are descriptive ratios, not causal or quality measures.</p>
+      </section>
+
+      <section class="paper-section" id="method">
+        <div class="section-heading">
+          <div><div class="section-kicker"><span>03</span> STUDY DESIGN</div><h2>Built for traceability.</h2></div>
+          <p class="section-aside">A cross-sectional descriptive analysis of the 2025 workbook snapshot.</p>
+        </div>
+        <div class="method-layout">
+          <div class="method-copy">
+            <p>The analytical unit is a validated transaction row, interpreted by the application as an enrollment record. Four workbook sheets—Users, Teachers, Courses, and Transactions—are checked against required schemas, normalized, and joined on identifiers. Transaction IDs are deduplicated; records with invalid dates, negative amounts, or orphan references are excluded by the loader.</p>
+            <p>For this snapshot, all <strong>10,000 transaction rows passed validation</strong>. The valid analytical table spans January 1 through December 30, 2025. Enrollment is an activity proxy: this dataset does not record course completion, learning gains, or session-level participation.</p>
+            <p>Separate review-only screens compare paid amounts within a course using a modified Z-score (minimum eight paid records; absolute score above 3.5), flag learner activity above the 99th percentile, and compare daily counts with weekday peers when the date-series and peer-count minimums are met. These full-snapshot flags do not alter or exclude records.</p>
+            <div class="method-callout"><span class="callout-symbol">∑</span><div><strong>Privacy by construction</strong><p>Direct names and email addresses are dropped during ingestion. Demographic cross-tab cells with 1–4 records are suppressed at display; zeros remain visible.</p></div><span class="callout-k">k = 5</span></div>
+          </div>
+          <div class="method-steps">
+            <div class="method-step"><span>01</span><div><strong>Validate</strong><p>Check workbook schema, dates, amounts, duplicate IDs, and references.</p></div><i>✓</i></div>
+            <div class="method-step"><span>02</span><div><strong>Minimize</strong><p>Remove direct identifiers before constructing the joined analysis table.</p></div><i>✓</i></div>
+            <div class="method-step"><span>03</span><div><strong>Describe</strong><p>Summarize counts, shares, catalog-relative uptake, and participation ratios.</p></div><i>✓</i></div>
+            <div class="method-step"><span>04</span><div><strong>Review</strong><p>Flag statistical deviations for human review only; never delete or label records as errors.</p></div><i>✓</i></div>
+          </div>
+        </div>
+        <div class="formula-grid">
+          <div class="formula-card"><span class="formula-name">CATEGORY POPULARITY INDEX</span><span class="formula">CPI<sub>c</sub> = <span class="fraction"><i>E<sub>c</sub> / E</i><i>K<sub>c</sub> / K</i></span></span><p>Enrollment share of category c divided by its share of catalog courses (course count, not seats or capacity). Project thresholds: below 0.85 under-enrolled; above 1.15 high relative demand.</p></div>
+          <div class="formula-card"><span class="formula-name">ADJUSTED GENDER PARITY INDEX</span><span class="formula">GPI<sub>c</sub> = <span class="fraction"><i>F<sub>c</sub> / F</i><i>M<sub>c</sub> / M</i></span></span><p>Compares a category’s share of female enrollments with its share of male enrollments. The project labels 0.97–1.03 as its reference band.</p></div>
+        </div>
+      </section>
+
+      <section class="paper-section findings-section" id="findings">
+        <div class="section-heading">
+          <div><div class="section-kicker"><span>04</span> FINDINGS</div><h2>Patterns, not verdicts.</h2></div>
+          <p class="section-aside">Results are limited to the supplied transaction and catalog fields.</p>
+        </div>
+        <div class="finding-list">
+          <article class="finding"><span class="finding-index">A</span><div><h3>Activity is concentrated among learners under 36.</h3><p>The 26–35 cohort accounts for 47.99% of enrollments, followed by 18–25 at 37.32% and Under 18 at 14.69%. There are no 36+ enrollments in this extract. This is a gap in observed coverage—not evidence about demand or ability among older adults.</p></div><span class="finding-stat">47.99%<small>AGES 26–35</small></span></article>
+          <article class="finding"><span class="finding-index">B</span><div><h3>Observed catalog uptake is broadly proportional to supply.</h3><p>Each of the 12 categories has five catalog courses. Category CPI values range from 0.97 to 1.10, remaining within the application’s 0.85–1.15 “balanced” range. Data Science is the upper end (916 enrollments; CPI 1.10); Programming is at the lower end (806; CPI 0.97).</p></div><span class="finding-stat">0.97–1.10<small>CPI RANGE</small></span></article>
+          <article class="finding"><span class="finding-index">C</span><div><h3>Aggregate gender shares are close; category patterns vary.</h3><p>Female-coded enrollment records represent 50.78% and male-coded records 49.22%. At category level, four of twelve indices fall within the project reference band. The lowest is Marketing (0.89); these ratios describe participation distribution, not fairness, preference, or cause.</p></div><span class="finding-stat">4 / 12<small>IN REFERENCE BAND</small></span></article>
+          <article class="finding"><span class="finding-index">D</span><div><h3>Free access is a substantial part of recorded activity.</h3><p>6,403 records (64.03%) are zero-dollar enrollments; 3,597 (35.97%) are paid. Transaction amount describes recorded monetary value only and cannot establish course value, completion, or learning effectiveness.</p></div><span class="finding-stat">64.03%<small>ZERO-DOLLAR RECORDS</small></span></article>
+        </div>
+      </section>
+
+      <section class="paper-section implications-section" id="implications">
+        <div class="section-heading">
+          <div><div class="section-kicker"><span>05</span> IMPLICATIONS</div><h2>From evidence to next questions.</h2></div>
+        </div>
+        <div class="implication-grid">
+          <article class="implication-card"><span class="implication-no">01</span><span class="implication-icon">⌖</span><h3>Investigate reach</h3><p>Study why older age cohorts are absent from this snapshot using additional, ethically collected data and learner research—not assumptions from zero counts.</p><span class="implication-tag">RESEARCH OPPORTUNITY</span></article>
+          <article class="implication-card"><span class="implication-no">02</span><span class="implication-icon">◒</span><h3>Monitor, don’t overreact</h3><p>Track category CPI over multiple periods before reallocating catalog capacity. A single-year ratio cannot show persistent unmet demand or course quality.</p><span class="implication-tag">PLANNING PRACTICE</span></article>
+          <article class="implication-card"><span class="implication-no">03</span><span class="implication-icon">⌁</span><h3>Add outcome evidence</h3><p>Pair enrollment telemetry with completion, learner-reported experience, and learning measures—using consent-aware collection and privacy review.</p><span class="implication-tag">MEASUREMENT GAP</span></article>
+        </div>
+      </section>
+
+      <section class="paper-section limitations-section" id="limits">
+        <div class="section-kicker"><span>06</span> LIMITATIONS & ETHICS</div>
+        <div class="limits-layout">
+          <div><h2>Read the boundaries<br>as carefully as the results.</h2><p class="limits-lead">A dashboard can make evidence easier to inspect. It cannot make observational data answer questions it was not designed to answer.</p></div>
+          <ul class="limits-list">
+            <li><strong>Descriptive, not causal.</strong> Associations and share ratios do not explain why learners enrolled or establish intervention effects.</li>
+            <li><strong>Enrollment is not learning.</strong> There are no completion, assessment, engagement-duration, or learning-gain measures in this analysis.</li>
+            <li><strong>One bounded snapshot.</strong> The 2025 workbook may not represent other periods, populations, or platforms; category mix is evenly sized here.</li>
+            <li><strong>Group labels have limits.</strong> Gender values are recorded binary in this extract; the analysis cannot represent identities absent from the source data.</li>
+            <li><strong>No population denominator.</strong> The workbook describes enrolled users but does not supply the eligible learner population; these shares cannot quantify population-level access or exclusion.</li>
+            <li><strong>Suppression is not anonymity.</strong> k=5 display suppression reduces exposure of small cells, but does not guarantee protection against linkage or inference, especially across overlapping queries.</li>
+            <li><strong>Review flags are not diagnoses.</strong> Robust deviation flags nominate aggregates for human review; they are not fraud, misconduct, or error findings.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="paper-section references-section" id="references">
+        <div class="section-kicker"><span>07</span> REFERENCES & REPRODUCIBILITY</div>
+        <h2>Sources & implementation notes.</h2>
+        <ol class="reference-list">
+          <li><span>[1]</span><div>EduPro Online Platform. <em>EduPro Online Platform.xlsx</em>. Workbook snapshot analyzed by EduPro Analytics, transaction dates 2025-01-01 to 2025-12-30. Aggregate values reproduced from the validated local workbook and deployed dashboard snapshot.</div></li>
+          <li><span>[2]</span><div>EduPro Analytics implementation. <em>src/data_loader.py</em>, <em>src/metrics.py</em>, <em>src/config.py</em>, and <em>tests/test_analytics.py</em>. Defines validation, cohort construction, CPI/GPI calculations, k=5 display suppression, and review flags.</div></li>
+          <li><span>[3]</span><div>Sweeney, L. (2002). k-anonymity: A model for protecting privacy. <em>International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems, 10</em>(5), 557–570. <a href="https://doi.org/10.1142/S0218488502001648" target="_blank" rel="noreferrer">https://doi.org/10.1142/S0218488502001648</a></div></li>
+          <li><span>[4]</span><div>Iglewicz, B., &amp; Hoaglin, D. C. (1993). <em>How to Detect and Handle Outliers.</em> ASQC Quality Press. Referenced for robust outlier review conventions; application flags are review-only.</div></li>
+        </ol>
+        <div class="repro-note"><span>REPRODUCIBILITY</span><p>The interface is a static research-paper companion. Its chart values are fixed aggregate summaries from the stated workbook snapshot; the interactive controls filter presentation, not the underlying source records. The Streamlit dashboard remains the operational source for uploaded-workbook analysis.<br><br><strong>Suggested citation:</strong> EduPro Analytics. (2026). <em>From catalog to learner activity: A descriptive study of enrollment patterns in the EduPro Online Platform (2025 snapshot).</em></p></div>
+      </section>
+
+      <footer class="paper-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">E</span><span>EduPro <em>Research</em></span></a><span>DESCRIPTIVE LEARNER INTELLIGENCE · 2025 SNAPSHOT</span><a href="#top">BACK TO TOP ↑</a></footer>
+    </main>
+  </div>
+  <div class="tooltip" id="chart-tooltip" role="status" aria-live="polite"></div>
+</body>
+</html>
